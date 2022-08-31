@@ -42,11 +42,4 @@ Please submit your public GitHub repository URL along with any supplementary fil
 
 Design files will not be included in your grade but help to provide additional context to the marker.
 
-    Please make sure to exclude node_modules by using a .gitignore file.
-
-Resources
-
-    Using branches and making a pull request
-    Installing Bootstrap
-    Customising Bootstrap
-    Excluding node_modules using .gitignore
+Please make sure to exclude node_modules by using a .gitignore file.
