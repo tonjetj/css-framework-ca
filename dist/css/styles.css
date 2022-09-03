@@ -1,6 +1,22 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 header {
-  background-color: lightblue;
+  padding: 0 50px !important;
+  margin-bottom: 100px !important;
+}
+
+nav {
+  padding: 0 50px;
+}
+
+main {
+  margin-top: 80px !important;
+}
+
+#searchBtn:hover {
+  background-color: transparent !important;
+  transform: scale(1.4);
+  transition: 0.2s ease;
 }
 
 /*!
