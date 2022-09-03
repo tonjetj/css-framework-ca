@@ -5,81 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="../dist/css/styles.css">
-</head>
-<body class="text-center">
-    <div class="dropdown-menu">
-        <form class="px-4 py-3">
-          <div class="mb-3">
-            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-          </div>
-          <div class="mb-3">
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="dropdownCheck">
-              <label class="form-check-label" for="dropdownCheck">
-                Remember me
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">New around here? Sign up</a>
-        <a class="dropdown-item" href="#">Forgot password?</a>
-      </div>
-=======
-    <link rel="stylesheet" href="../dist/css/styles.css" />
   </head>
+  <header></header>
   <body class="text-center">
-    <div class="dropdown-menu">
-      <form class="px-4 py-3">
-        <div class="mb-3">
-          <label for="exampleDropdownFormEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleDropdownFormEmail1"
-            placeholder="email@example.com"
-          />
+    <main class="form-signin d-flex justify-content-center mb-5" id="">
+      <form>
+        <h1 class="h3 mb-3 fw-normal fs-1 text-start">Please sign in</h1>
+    
+        <div class="form mt-5">
+          <label class="float-start" for="floatingInput">Email address</label>
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         </div>
-        <div class="mb-3">
-          <label for="exampleDropdownFormPassword1" class="form-label"
-            >Password</label
-          >
-          <input
-            type="password"
-            class="form-control"
-            id="exampleDropdownFormPassword1"
-            placeholder="Password"
-          />
+        <div class="form mb-3">
+          <label class="float-start mt-2" for="floatingPassword">Password</label>
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
         </div>
-        <div class="mb-3">
-          <div class="form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="dropdownCheck"
-            />
-            <label class="form-check-label" for="dropdownCheck">
-              Remember me
-            </label>
-          </div>
+    
+        <div class="checkbox mb-3 float-start">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
       </form>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">New around here? Sign up</a>
-      <a class="dropdown-item" href="#">Forgot password?</a>
-    </div>
->>>>>>> 55175540ef9b0913359ada51c9f57c93ea6ba8b2
+    </main>
+      
+  <footer class="bg-white blog-footer d-flex justify-content-center border-top py-4">
+    <p class="pt-2">Copyright &copy; 2022 Tonje T. Jenssen</p>
+  </footer>
+
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
