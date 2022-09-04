@@ -21,7 +21,8 @@ $grays: (
     "600": $gray-600,
     "700": $gray-700,
     "800": $gray-800,
-    "900": $gray-900);
+    "900": $gray-900
+);
 
 // scss-docs-start color-variables
 $blue: #0d6efd;
@@ -41,7 +42,8 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1140px,
-    xxl: 1320px);
+    xxl: 1320px
+);
 
 // scss-docs-start border-variables
 $border-width: 1px;
@@ -50,4 +52,5 @@ $border-widths: (
     2: 2px,
     3: 3px,
     4: 4px,
-    5: 5px);
+    5: 5px
+);
