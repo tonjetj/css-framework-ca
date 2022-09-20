@@ -45,6 +45,18 @@ $container-max-widths: (
     xxl: 1320px
 );
 
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
+
+// Container padding
+
+$container-padding-x: 50px;
+
 // scss-docs-start border-variables
 $border-width: 1px;
 $border-widths: (
@@ -53,4 +65,26 @@ $border-widths: (
     3: 3px,
     4: 4px,
     5: 5px
+);
+
+
+// scss-docs-start border-radius-variables
+$border-radius: 5px;
+$border-radius-sm: 10px;
+$border-radius-lg: 40px;
+$border-radius-pill: 50%;
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 6,
+    8: $spacer * 8,
+    9: $spacer * 10,
 );

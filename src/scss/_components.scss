@@ -1,9 +1,27 @@
+@mixin transparent-background {
+    background-color: transparent;
+}
+
+@mixin no-radius {
+    border-radius: 0;
+}
+
+
+@mixin scroll-margin ($min-height: scroll-margin-top) {
+    scroll-margin-top: 200px;
+}
+
 #searchBtn:hover {
-    background-color: transparent !important;
+    @include transparent-background;
     transform: scale(1.4);
     transition: 0.2s ease;
 }
 
 #addPost {
-    border-radius: 0px 0px 10px 10px !important;
+    @include no-radius;
+}
+
+
+#newPost {
+    @include scroll-margin;
 }
