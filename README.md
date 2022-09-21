@@ -1,45 +1,51 @@
-Goal
+# Course Assignment for JS2
+This is a Course Assignment for JavaScript 2. 
 
-To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
-Brief
+## Goal 
+To apply knowledge of JavaScript techniques to implement the front end functionality for a social media application
 
-You are tasked with creating 3 pages in HTML using Bootstrap and SASS:
+## Brief
+You have been tasked with producing a new JavaScript front end client for an existing social media platform. The client application must be attractive and responsive, but you have an otherwise blank slate in terms of theme design language.
 
-    - Homepage
-    - Profile page
-    - Login page
+Using the provided API and API documentation, create a functioning user interface that allows for ***viewing, posting, editing and deleting*** social media content.
 
-The Homepage should have a feed of posts from the user’s contacts, a search bar, and a form to create a new post.
+Social API routes require authorization via JWT (JSON Web Tokens). You will need to register an account and login to access your token.
 
-The profile page should have a profile image, details about the user, a list of the user’s contacts, their posts and a form to post to their wall.
+In order to complete the required features you will also need to make use of ```GET```, ```POST```, ```PUT```, and ```DELETE``` HTTP methods.
 
-The login page should have a form to login to the application. Make sure to include HTML form validation and use /profile as the action attribute.
+Using localStorage is *highly recommended*, especially for storing JWT tokens.
 
-You will only be working on the visuals for this project at this stage, forms do not need to submit data, for example.
+A finished project fulfills the requirements below with an easy to use and error-free user interface
 
-Submission for this project will follow the pattern used in professional development. You are required to seek feedback from your peers as well as the teachers in order to complete this assignment.
-Process
 
-    - Create a design or wireframe for each page
-    - Create a new public repository on GitHub
-    - Create a new project folder for this repository
-    - Create a new git branch for this project
-    - Create a package.json file
-    - Install Bootstrap, SASS and Live Server
-    - Configure NPM scripts in package.json
-    - Implement your design using Bootstrap and SASS overrides
-    - Create a Pull Request to merge your changes to the main branch
-    - Share this Pull Request and request peer review
-    - Discuss and implement the feedback gathered from peer review
-    - Share this Pull Request with a teacher for their approval
-    - Complete the approved Pull Request, or implement the required changes
+## Trello
+A work plan for this CA was created on [Trello](https://trello.com/invite/b/TM497vwB/2dd1999492de8be1e63a3393a189529c/javascript-2).
 
-Delivery
+## Required Features 
+Following user stories are required for a passing submission: 
+- User with @noroff.no or @stud.noroff.no email can register profile
+- Registered user can login
+- User can view a post content feed
+- User can filter the post content feed
+- User can search the post content feed
+- User can view a post content item by ID
+- User can create a post content item
+- User can update a post content item
+- User can delete a post content item
 
-For peer review, please submit a link to your repository to the Moodle forum. You should review 2 of your peers’ submissions.
+## Additional Features
+These following user stories are optional: 
+- User can create a comment on a post
+- User can edit profile media
+- User can follow/unfollow a profile
+- User can react to a post content item
 
-Please submit your public GitHub repository URL along with any supplementary files such as wireframes. Your repo should have an active PR that the teachers will review.
+## Restrictions
+- Required functionality ***must*** be implemented in original, pure JavaScript.
+- A CSS Framework may be used to build the apllication UI.
+- A ```.gitignore``` file ***must*** be provided including ```node_module```. This folder ***must*** be untracked. 
+- Content posted on the API is public and associated with your identity. Be appropriate and respectful. 
 
-Design files will not be included in your grade but help to provide additional context to the marker.
-
-Please make sure to exclude node_modules by using a .gitignore file.
+## Resources
+- [API Guide](https://noroff-api-docs.netlify.app/social-endpoints/authentication)
+- [API Documentation](https://nf-api.onrender.com/docs/static/index.html)
