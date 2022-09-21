@@ -1,3 +1,5 @@
+/* Mixin */
+
 @mixin transparent-background {
     background-color: transparent;
 }
@@ -10,6 +12,8 @@
 @mixin scroll-margin ($min-height: scroll-margin-top) {
     scroll-margin-top: 200px;
 }
+
+/* include */
 
 #searchBtn:hover {
     @include transparent-background;
