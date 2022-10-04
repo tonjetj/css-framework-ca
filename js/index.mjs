@@ -1,7 +1,6 @@
 import { setRegisterFormListener } from "./handlers/register.mjs";
 import { setLoginFormListener } from "./handlers/login.mjs";
-import { createPost } from "./api/posts/create.mjs";
-import { updatePost } from "./api/posts/update.mjs";
+import * as post from "./api/posts/index.mjs";
 
 const path = location.pathname;
 
@@ -11,7 +10,13 @@ if (path === "/profile/login/") {
   setRegisterFormListener();
 }
 
-createPost({
+post.createPost();
+post.updatePost();
+post.removePost();
+post.getPost();
+post.getPosts();
+
+/* createPost({
   title: "Hello there",
   body: "skhfskjdfhdsj",
 });
@@ -21,3 +26,6 @@ updatePost({
   title: "hælla",
   body: "this is a changed and updated post.",
 });
+
+removePost(938);
+ */
