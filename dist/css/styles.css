@@ -16,6 +16,14 @@
   scroll-margin-top: 200px;
 }
 
+.form-error {
+  display: none;
+}
+
+input:invalid + .form-error {
+  display: block;
+}
+
 /* Layout */
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)

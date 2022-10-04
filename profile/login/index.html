@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App | login</title>
+    <link rel="stylesheet" href="../../dist/css/styles.css" />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../../js/index.mjs" type="module" defer></script>
+  </head>
+
+  <body class="text-center">
+    <main
+      class="form-signin d-flex justify-content-center py-7 my-7 mx-4"
+      id="loginMain"
+    >
+      <form
+        id="loginForm"
+        class="px-5 bg-light shadow-lg rounded-3"
+        action="/auth/login"
+        method="post"
+      >
+        <h1 class="mt-5 mb-3 fw-normal display-5 text-center">Login</h1>
+        
+        <div>
+          <label class="float-start" for="emailAddress">Email address</label>
+          <input
+            class="form-control"
+            id="emailAddress"
+            name="email"
+            type="email"
+            placeholder="user@noroff.no"
+            pattern="^[\w\-.]+@(stud.)?noroff.no$"
+            title="Email address must end on either @noroff.no or @stud.noroff.no to be able to login."
+            required
+          />
+          <div class="alert alert-danger form-error mt-2 py-1 px-3 text-start" id="emailError" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+          </svg> Please enter a valid email address</div>
+                  </div>
+        </div>
+
+        <div>
+          <label class="float-start mt-2" for="password">Password</label>
+          <input
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            name="password"
+            type="password"
+            minlength="8"
+            title="Your password must contain at least 8 characters."
+            required
+          />
+          <div class="alert alert-danger form-error mt-2 py-1 px-3 text-start" id="passwordError" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+          </svg> Please enter your password</div>
+        </div>
+
+        <button
+          class="w-100 my-5 btn btn-lg btn-primary"
+          type="submit"
+          value="submit"
+        >
+          login
+        </button>
+      </form>
+    </main>
+
+    <footer
+      class="bg-white blog-footer d-flex justify-content-center border-top"
+    >
+      <p class="pt-2">Copyright &copy; 2022 Tonje T Jenssen</p>
+    </footer>
+  </body>
+</html>

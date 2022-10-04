@@ -29,3 +29,11 @@
 #newPost {
     @include scroll-margin;
 }
+
+.form-error {
+    display: none;
+}
+
+input:invalid + .form-error {
+    display: block;
+}
