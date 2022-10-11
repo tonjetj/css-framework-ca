@@ -24,7 +24,32 @@ input:invalid + .form-error {
   display: block;
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+}
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+}
+
+.bg-image {
+  background-image: url("https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 850px;
+}
+
 /* Layout */
+* {
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

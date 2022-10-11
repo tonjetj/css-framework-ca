@@ -11,17 +11,101 @@
   </head>
 
   <body class="text-center">
+    <header
+    class="fixed-top container-fluid bg-light shadow-sm p-3 mb-5 bg-body"
+  >
+    <nav class="nav align-items-center py-2 px-5">
+      <div class="nav-link pt-1">
+        <a
+          class="link-dark text-decoration-none hover-overlay"
+          href="../index.html"
+          ><i class="bi bi-house-fill fs-4"></i
+        ></a>
+      </div>
+
+      <div class="flex-grow-1 text-center"></div>
+
+      <div class="align-items-center">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button id="searchBtn" class="btn me-3 border-0" type="submit">
+            <svg
+              class="mb-1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <title>Search</title>
+              <circle cx="10.5" cy="10.5" r="7.5"></circle>
+              <path d="M21 21l-5.2-5.2"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="dropdown">
+        <a
+          href="#"
+          class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+          <li><a class="dropdown-item" href="#newPost">New post</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li>
+            <a class="dropdown-item" href="./otherPages/profile.html"
+              >Profile</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="./otherPages/login.html"
+              >Sign out</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <main
-      class="form-signin d-flex justify-content-center py-7 my-7 mx-4"
+      class="bg-image form-signin d-flex justify-content-center py-7 mt-5"
       id="loginMain"
     >
       <form
         id="registerForm"
-        class="px-5 bg-light shadow-lg rounded-3"
+        class="px-5 my-6 bg-light shadow-lg rounded-3"
         action="/auth/register"
         method="post"
       >
-        <h1 class="mt-5 mb-2fw-normal display-5 text-center">Register</h1>
+        <h1 class="mt-5 mb-2 display-5 text-center">Register</h1>
         <p class="fw-normal fs-6 text-center">Fill out this form</p>
 
         <div class="mb-3">
@@ -92,7 +176,7 @@
     <footer
       class="bg-white blog-footer d-flex justify-content-center border-top"
     >
-      <p class="pt-2">Copyright &copy; 2022 Tonje T Jenssen</p>
+      <p class="p-2">Copyright &copy; 2022 Tonje T Jenssen</p>
     </footer>
   </body>
 </html>
