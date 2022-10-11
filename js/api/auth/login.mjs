@@ -22,5 +22,5 @@ export async function login(profile) {
   storage.save("profile", user);
 
   alert("You are now logged in.");
-  // window.location.href = "/profile/index.html";
+  window.location.href = "/feed/index.html";
 }
